@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.central{
+    justify-content: center;
+}
+
+
+#corpo {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #72BFE0 5.33%, rgba(132, 214, 249, 0.87) 25.27%, rgba(147, 131, 241, 0.92) 100%);
+}
+
+#logo {
+    left: 270px;
+    top: 80px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 565%;
+    line-height: 193px;
+
+    color: #FFFFFF;
+}
+
+#entrada {
+    width: 600px;
+    height: 80px;
+    margin-bottom: 8%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 80px;
+
+    color: #FFFFFF;
+}
+
+#texto_login {
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 15px;
+    width: 498px;
+    height: 52px;
+    left: 401px;
+    top: 430px;
+
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid rgba(0, 0, 0, 0.44);
+    border-radius: 18px;
+}
+
+#texto_senha {
+    box-sizing: border-box;
+    margin-top: 2%;
+
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 15px;
+    width: 498px;
+    height: 52px;
+    left: 401px;
+    top: 510px;
+
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid rgba(0, 0, 0, 0.44);
+    border-radius: 18px;
+}
+
+.Camada_2 {
+    background-image: url("Camada 2.png");
+    position: absolute;
+    width: 66.19px;
+    height: 112.08px;
+    left: 77.5%;
+    top: 17%;
+
+    transform: rotate(3.0deg);
+    z-index: 3;
+}
+
+.Camada_3 {
+    width: 140.19px;
+    height: 90.08px;
+
+    background-image: url("Camada 3.png");
+    position: absolute;
+    left: 12%;
+    top: 22%;
+    transform: rotate(5.08deg);
+
+    z-index: 3;
+}
+
+#rodaDireita{
+    position: absolute;
+width: 88px;
+height: 78px;
+left: 58%;
+top: 31%;
+}
+
+#rodaEsquerda{
+    position: absolute;
+width: 88px;
+height: 78px;
+left: 32%;
+top: 31.5%;
+
+}
