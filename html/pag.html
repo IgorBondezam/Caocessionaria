@@ -20,7 +20,7 @@
             <a id="listaCli" class="texto_lateral">Listar clientes</a>
         </div>
     </div>
-    <main id="corpo">
+    <main id="corpo" class="flex meio">
         <div>
             <span id="logo" >CãoCessionária</span>
             <img src="../img/Camada_2.png" class="Camada_2" alt="">
@@ -28,6 +28,50 @@
             <img src="../img/rodas.png" id="rodaEsquerda" class="" alt="">
             <img src="../img/rodas.png" id="rodaDireita" class="" alt="">
         </div>
+
+        <fieldset id="fieldCli" class="flex coluna meio desaparecer">
+
+            <div id="label_pqn" class="flex ">
+                <label for="idCli" id="labId" class="espacoLabelPqn">Id:</label>
+                <label for="sexo" id="labSexo" class="espacoLabelPqn">Sexo:</label>
+                <label for="nascimento" id="labNasc" class="espacoLabelPqn">Nascimento:</label>
+                <label for="dataCad" id="labCad" class="espacoLabelPqn">Data Cadastro:</label>
+            </div>
+            
+            <div class="flex espacoEntre ">
+            <input type="text" name="idCli" id="idCli" class="input_pqn">
+            <input type="text" name="sexo" id="sexo" class="input_pqn">
+            <input type="text" name="nascimento" id="nascimento" class="input_pqn">
+            <input type="text" name="dataCad" id="dataCad" class="input_pqn">
+            </div>
+
+            <div class="flex espacoEntre">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" class="input_grd">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" class="input_med">
+            </div>
+
+            <div class="flex espacoEntre">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="input_grd">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="input_med">
+            </div>
+
+            <div class="flex espacoEntre">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" class="input_grd">
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" class="input_med">
+            </div>
+
+            <div>
+            <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
+            <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
+            </div>
+            
+        </fieldset>
     </main>
 </body>
 

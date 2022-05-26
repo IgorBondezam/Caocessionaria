@@ -4,6 +4,7 @@ window.onload = function () {
     const addVenda = document.getElementById("addVenda")
     const listaCli = document.getElementById("listaCli")
 
+    const fieldCli = document.getElementById("fieldCli")
 
     addCli.addEventListener("click", function () {
         if (!addCli.classList.contains("fundoAzul")) {
@@ -11,8 +12,12 @@ window.onload = function () {
             addProd.classList.remove("fundoAzul")
             addVenda.classList.remove("fundoAzul")
             listaCli.classList.remove("fundoAzul")
+
+            fieldCli.classList.remove("desaparecer")
         } else {
             addCli.classList.remove("fundoAzul")
+            fieldCli.classList.add("desaparecer")
+
         }
     })
     addProd.addEventListener("click", function () {

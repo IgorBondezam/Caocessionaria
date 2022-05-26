@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.desaparecer {
+    display: none !important;
+}
+
 .flex {
     display: flex;
 }
@@ -16,6 +20,11 @@
 .meio {
     align-items: center;
 
+}
+
+.espacoEntre {
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .coluna {
@@ -68,63 +77,172 @@
     height: 10vh;
 }
 
+/* LOGOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+        #logo {
+            position: absolute;
+            right: 360px;
+            top: 45px;
 
-#logo {
-    position: absolute;
-    right: 200px;
-    top: 45px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: normal;
+            font-weight: 700;
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+            font-size: 3.3vw;
 
-    font-size: 5.3vw;
+            color: #FFFFFF;
+        }
 
-    color: #FFFFFF;
-}
+        .Camada_2 {
+            background-image: url("Camada 2.png");
+            position: absolute;
+            width: 44.19px;
+            height: 80.08px;
+            right: 23.5%;
+            top: 5%;
 
-.Camada_2 {
-    background-image: url("Camada 2.png");
-    position: absolute;
-    width: 66.19px;
-    height: 112.08px;
-    right: 10.5%;
-    top: 5%;
+            transform: rotate(3.0deg);
+            z-index: 3;
+        }
 
-    transform: rotate(3.0deg);
-    z-index: 3;
-}
+        .Camada_3 {
+            width: 60.19px;
+            height: 40.08px;
 
-.Camada_3 {
-    width: 140.19px;
-    height: 90.08px;
+            background-image: url("Camada 3.png");
+            position: absolute;
+            left: 41.2%;
+            top: 9.2%;
+            transform: rotate(5.08deg);
 
-    background-image: url("Camada 3.png");
-    position: absolute;
-    left: 30.2%;
-    top: 10.2%;
-    transform: rotate(5.08deg);
+            z-index: 3;
+        }
 
-    z-index: 3;
-}
+        #rodaDireita {
+            position: absolute;
+            width: 48px;
+            height: 38px;
+            left: 63%;
+            top: 13.9%;
+        }
 
-#rodaDireita {
-    position: absolute;
-    width: 88px;
-    height: 78px;
-    left: 68%;
-    top: 18.1%;
-}
+        #rodaEsquerda {
+            position: absolute;
+            width: 48px;
+            height: 38px;
+            left: 50%;
+            top: 13.9%;
 
-#rodaEsquerda {
-    position: absolute;
-    width: 88px;
-    height: 78px;
-    left: 48%;
-    top: 18.2%;
+        }
 
-}
-
-.fundoAzul{
+.fundoAzul {
     background-color: #94D2F8;
 }
+
+/* ADD CLIIIIIIIIIIIIIIIIIIII */
+
+        #fieldCli {
+            position: absolute;
+            width: 800px;
+            height: 400px;
+            left: 35%;
+            top: 25%;
+
+            background: #D8F3EB;
+            border: 3px solid #38B8D4;
+        }
+
+        label {
+            cursor: pointer;
+
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #000000;
+
+        }
+
+        #labId {
+            padding-right: 80px;
+        }
+
+        #labSexo {
+            padding-right: 10px;
+            padding-left: 80px;
+        }
+
+        #labNasc {
+            padding-left: 110px;
+        }
+
+        #labCad {
+            padding-left: 90px;
+        }
+
+        .espacoLabelPqn {
+            margin-top: 10px;
+
+        }
+
+        .input_pqn {
+            width: 100px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 3px solid rgba(0, 0, 0, 0.44);
+            border-radius: 18px;
+            margin-bottom: 3px;
+            margin-left: 45px;
+            margin-right: 45px;
+
+        }
+
+        .input_med {
+            width: 267.45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 3px solid rgba(0, 0, 0, 0.44);
+            border-radius: 18px;
+            margin-top: 30px;
+            margin-bottom: 3px;
+
+        }
+
+        .input_grd {
+            width: 350.96px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.88);
+            border: 3px solid rgba(0, 0, 0, 0.44);
+            border-radius: 18px;
+            margin-top: 30px;
+            margin-bottom: 3px;
+
+
+        }
+
+        .botao_form {
+            width: 211px;
+            height: 45px;
+            border-radius: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 5px;
+
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+
+
+        }
+
+        #salvar {
+            background: rgba(66, 255, 0, 0.44);
+            border: 3px solid rgba(66, 255, 0, 0.44);
+
+        }
+
+        #excluir {
+            background: rgba(255, 0, 15, 0.84);
+            border: 3px solid rgba(211, 9, 9, 0.65);
+        }
+

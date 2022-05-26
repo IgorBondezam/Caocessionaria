@@ -9,7 +9,7 @@ window.onload = function () {
                 if(texto_user.value != "admin" && texto_senha.value != "admin") throw new Error("Usuário e senha inválido")
                 if (texto_user.value != "admin") throw new Error("Usuário inválido")
                 if (texto_senha.value != "admin") throw new Error("Senha inválida")
-                window.open("html/pag.html")
+                window.open("html/pag.html", "_parent")
             }
         } catch (error) {
             alert(error.message)
