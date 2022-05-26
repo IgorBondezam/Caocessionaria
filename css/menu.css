@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+.centralizar {
+    align-items: center;
+    justify-content: center;
+}
+
+.meio {
+    align-items: center;
+
+}
+
+.coluna {
+    flex-direction: column;
+}
+
+#div_lateral {
+    width: 25%;
+    height: 100vh;
+}
+
+#caixa_blur {
+    width: 25%;
+    height: 101.5%;
+
+    position: absolute;
+
+    left: -20px;
+    top: -10px;
+
+    background: #999FF3;
+    filter: blur(20px);
+    z-index: 0;
+}
+
+.texto_lateral {
+    z-index: 10;
+
+    width: 110%;
+
+    margin-top: 20px;
+    padding-left: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 48px;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.corAzul {
+    background: #94D2F8;
+}
+
+#corpo {
+    width: 75%;
+    height: 10vh;
+}
+
+
+#logo {
+    position: absolute;
+    right: 200px;
+    top: 45px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    font-size: 5.3vw;
+
+    color: #FFFFFF;
+}
+
+.Camada_2 {
+    background-image: url("Camada 2.png");
+    position: absolute;
+    width: 66.19px;
+    height: 112.08px;
+    right: 10.5%;
+    top: 5%;
+
+    transform: rotate(3.0deg);
+    z-index: 3;
+}
+
+.Camada_3 {
+    width: 140.19px;
+    height: 90.08px;
+
+    background-image: url("Camada 3.png");
+    position: absolute;
+    left: 30.2%;
+    top: 10.2%;
+    transform: rotate(5.08deg);
+
+    z-index: 3;
+}
+
+#rodaDireita {
+    position: absolute;
+    width: 88px;
+    height: 78px;
+    left: 68%;
+    top: 18.1%;
+}
+
+#rodaEsquerda {
+    position: absolute;
+    width: 88px;
+    height: 78px;
+    left: 48%;
+    top: 18.2%;
+
+}
+
+.fundoAzul{
+    background-color: #94D2F8;
+}
