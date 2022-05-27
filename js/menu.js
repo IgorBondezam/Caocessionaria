@@ -4,6 +4,8 @@ window.onload = function () {
     const addVenda = document.getElementById("addVenda")
     const listaCli = document.getElementById("listaCli")
 
+    const fechar_aba = document.querySelector(".fechar_aba")
+
     const fieldCli = document.getElementById("fieldCli")
 
     addCli.addEventListener("click", function () {
@@ -53,7 +55,10 @@ window.onload = function () {
         }
     })
 
-
+    fechar_aba.addEventListener("click", function(){
+        addCli.classList.remove("fundoAzul")
+        fieldCli.classList.add("desaparecer")
+    })
 
 
 }

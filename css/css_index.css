@@ -18,7 +18,8 @@
 #corpo {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(180deg, #72BFE0 5.33%, rgba(132, 214, 249, 0.87) 25.27%, rgba(147, 131, 241, 0.92) 100%);
+    background-color: rgba(132, 214, 249, 0.87);
+    /* background: linear-gradient(180deg, #72BFE0 5.33%, rgba(132, 214, 249, 0.87) 25.27%, rgba(147, 131, 241, 0.92) 100%); */
 }
 
 #logo {
@@ -34,7 +35,10 @@
 
     color: #FFFFFF;
 }
-
+.logo{
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
 #entrada {
     width: 600px;
     height: 80px;

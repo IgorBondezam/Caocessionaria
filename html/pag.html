@@ -22,14 +22,22 @@
     </div>
     <main id="corpo" class="flex meio">
         <div>
-            <span id="logo" >CãoCessionária</span>
+            <!-- <span id="logo" >CãoCessionária</span>
             <img src="../img/Camada_2.png" class="Camada_2" alt="">
             <img src="../img/Camada 3.png" class="Camada_3" alt="">
             <img src="../img/rodas.png" id="rodaEsquerda" class="" alt="">
-            <img src="../img/rodas.png" id="rodaDireita" class="" alt="">
+            <img src="../img/rodas.png" id="rodaDireita" class="" alt=""> -->
+            <img src="../img/logoo.png"  id="logo" alt="">
+
         </div>
 
-        <fieldset id="fieldCli" class="flex coluna meio desaparecer">
+
+        <!-- ADD CLIENTES -->
+        <fieldset id="fieldCli" class="flex coluna meio desaparecer ">
+
+            <div class="fechar_aba ">
+                <strong>X</strong>
+            </div>
 
             <div id="label_pqn" class="flex ">
                 <label for="idCli" id="labId" class="espacoLabelPqn">Id:</label>
@@ -45,21 +53,21 @@
             <input type="text" name="dataCad" id="dataCad" class="input_pqn">
             </div>
 
-            <div class="flex espacoEntre">
+            <div class=" ">
             <label for="nome">Nome:</label>
             <input type="text" name="nome" id="nome" class="input_grd">
-            <label for="cpf">CPF:</label>
+            <label for="cpf" class="cpf_label">CPF:</label>
             <input type="text" name="cpf" id="cpf" class="input_med">
             </div>
 
-            <div class="flex espacoEntre">
+            <div class=" ">
             <label for="email">Email:</label>
             <input type="text" name="email" id="email" class="input_grd">
             <label for="telefone">Telefone:</label>
             <input type="text" name="telefone" id="telefone" class="input_med">
             </div>
 
-            <div class="flex espacoEntre">
+            <div class=" ">
             <label for="cidade">Cidade:</label>
             <input type="text" name="cidade" id="cidade" class="input_grd">
             <label for="estado">Estado:</label>
@@ -70,8 +78,54 @@
             <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
             <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
             </div>
-            
         </fieldset>
+
+        <!-- ADD PRODUTOS -->
+
+        <fieldset id="fieldProd" class="flex coluna meio desaparecer ">
+
+            <div class="fechar_aba ">
+                <strong>X</strong>
+            </div>
+
+            <div id="label_pqn" class="flex ">
+                
+                <label for="idProd" id="labIdProd" class="espacoLabelPqn">Id:</label>
+            </div>
+            
+            <div class="flex espacoEntre ">
+            <input type="text" name="idProd" id="idProd" class="input_pqn">
+            </div>
+
+            <div class=" ">
+            <label for="desc">Descrição:</label>
+            <input type="text" name="desc" id="desc" class="input_grd">
+            <label for="cpf" class="labelQtdProd">Qtd em estoque:</label>
+            <input type="text" name="qtdProd" id="qtdProd" class="input_med">
+            </div>
+
+            <div class=" ">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" class="input_grd">
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone" class="input_med">
+            </div>
+
+            <div class=" ">
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" class="input_grd">
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" class="input_med">
+            </div>
+
+            <div>
+            <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
+            <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
+            </div>
+        </fieldset>
+
+        
+
     </main>
 </body>
 
