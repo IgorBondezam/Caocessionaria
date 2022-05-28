@@ -12,7 +12,7 @@
 
 <body class="flex corAzul">
     <div id="div_lateral">
-        <div id="caixa_blur" ></div>
+        <div id="caixa_blur"></div>
         <div class="flex meio coluna">
             <a id="addCli" class="texto_lateral">Adicionar cliente</a>
             <a id="addProd" class="texto_lateral">Adicionar produto</a>
@@ -27,7 +27,7 @@
             <img src="../img/Camada 3.png" class="Camada_3" alt="">
             <img src="../img/rodas.png" id="rodaEsquerda" class="" alt="">
             <img src="../img/rodas.png" id="rodaDireita" class="" alt=""> -->
-            <img src="../img/logoo.png"  id="logo" alt="">
+            <img src="../img/logoo.png" id="logo" alt="">
 
         </div>
 
@@ -35,7 +35,7 @@
         <!-- ADD CLIENTES -->
         <fieldset id="fieldCli" class="flex coluna meio desaparecer ">
 
-            <div class="fechar_aba ">
+            <div id="fechar_Cli" class="fechar_aba ">
                 <strong>X</strong>
             </div>
 
@@ -45,38 +45,44 @@
                 <label for="nascimento" id="labNasc" class="espacoLabelPqn">Nascimento:</label>
                 <label for="dataCad" id="labCad" class="espacoLabelPqn">Data Cadastro:</label>
             </div>
-            
-            <div class="flex espacoEntre ">
-            <input type="text" name="idCli" id="idCli" class="input_pqn">
-            <input type="text" name="sexo" id="sexo" class="input_pqn">
-            <input type="text" name="nascimento" id="nascimento" class="input_pqn">
-            <input type="text" name="dataCad" id="dataCad" class="input_pqn">
-            </div>
 
-            <div class=" ">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" class="input_grd">
-            <label for="cpf" class="cpf_label">CPF:</label>
-            <input type="text" name="cpf" id="cpf" class="input_med">
-            </div>
-
-            <div class=" ">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" class="input_grd">
-            <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" id="telefone" class="input_med">
-            </div>
-
-            <div class=" ">
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" class="input_grd">
-            <label for="estado">Estado:</label>
-            <input type="text" name="estado" id="estado" class="input_med">
+            <div class="flex  ">
+                <input type="text" name="idCli" id="idCli" class="input_pqn escrever_texto">
+                <input type="text" name="sexo" id="sexo" class="input_pqn escrever_texto">
+                <input type="text" name="nascimento" id="nascimento" class="input_pqn escrever_texto">
+                <input type="text" name="dataCad" id="dataCad" class="input_pqn escrever_texto">
             </div>
 
             <div>
-            <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
-            <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
+                <label for="nome">Nome:</label>
+                <label for="cpf" class="cpf_label" style="margin-left: 310px; margin-right: 230px;">CPF:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="nome" id="nome" class="input_grd escrever_texto" >
+                <input type="text" name="cpf" id="cpf" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <label for="telefone" class="margin-left-cli">Telefone:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="email" id="email" class="input_grd escrever_texto">
+                <input type="text" name="telefone" id="telefone" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="cidade">Cidade:</label>
+                <label for="estado" class="margin-left-cli">Estado:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="cidade" id="cidade" class="input_grd escrever_texto">
+                <input type="text" name="estado" id="estado" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
+                <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
             </div>
         </fieldset>
 
@@ -84,47 +90,106 @@
 
         <fieldset id="fieldProd" class="flex coluna meio desaparecer ">
 
-            <div class="fechar_aba ">
+
+
+            <div id="label_pqn" class="flex baixo cima-25">
+                <label for="idProd" id="labIdProd" class="espacoLabelPqn">Id:</label>
+                <div id="fechar_abaProd" class="fechar_abaProd fechar_x ">
+                    <strong>X</strong>
+                </div>
+            </div>
+
+            <div class="flex desce-25 ">
+                <input type="text" name="idProd" id="idProd" class="input_pqn escrever_texto">
+            </div>
+
+            <div>
+                <label for="desc">Descrição:</label>
+                <label for="qtdProd" class="labelQtdProd margin-left">Qtd em estoque:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="desc" id="desc" class="input_grd escrever_texto ">
+                <input type="text" name="qtdProd" id="qtdProd" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="fornecedor">Fornecedor:</label>
+                <label for="telefoneProd" class="margin-left-telefone">Telefone:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="fornecedor" id="fornecedor" class="input_grd escrever_texto">
+                <input type="text" name="telefoneProd" id="telefoneProd" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="varPago">Valor pago:</label>
+                <label for="varVend" class="margin-left" style="margin-right: 175px;">Valor venda:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="varPago" id="varPago" class="input_grd escrever_texto">
+                <input type="text" name="varVend" id="varVend" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
+                <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
+            </div>
+        </fieldset>
+
+        <!-- ADD VENDAAAAAA -->
+
+        <fieldset id="fieldVenda" class="flex coluna meio desaparecer ">
+
+            <div id="fechar_venda" class="fechar_aba ">
                 <strong>X</strong>
             </div>
 
             <div id="label_pqn" class="flex ">
-                
-                <label for="idProd" id="labIdProd" class="espacoLabelPqn">Id:</label>
-            </div>
-            
-            <div class="flex espacoEntre ">
-            <input type="text" name="idProd" id="idProd" class="input_pqn">
+                <label for="idCli" id="labIdVenda" class="espacoLabelPqn">Id da Venda:</label>
+                <label for="sexo" id="labIdCliente" class="espacoLabelPqn">Id do Cliente:</label>
+                <label for="nascimento" id="labIdProduto" class="espacoLabelPqn">Id do Produto:</label>
+                <label for="dataCad" id="labDataVenda" class="espacoLabelPqn">Data da Venda:</label>
             </div>
 
-            <div class=" ">
-            <label for="desc">Descrição:</label>
-            <input type="text" name="desc" id="desc" class="input_grd">
-            <label for="cpf" class="labelQtdProd">Qtd em estoque:</label>
-            <input type="text" name="qtdProd" id="qtdProd" class="input_med">
-            </div>
-
-            <div class=" ">
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email" class="input_grd">
-            <label for="telefone">Telefone:</label>
-            <input type="text" name="telefone" id="telefone" class="input_med">
-            </div>
-
-            <div class=" ">
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" class="input_grd">
-            <label for="estado">Estado:</label>
-            <input type="text" name="estado" id="estado" class="input_med">
+            <div class="flex  ">
+                <input type="text" name="idCli" id="idCli" class="input_pqn escrever_texto">
+                <input type="text" name="sexo" id="sexo" class="input_pqn escrever_texto">
+                <input type="text" name="nascimento" id="nascimento" class="input_pqn escrever_texto">
+                <input type="text" name="dataCad" id="dataCad" class="input_pqn escrever_texto">
             </div>
 
             <div>
-            <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
-            <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
+                <label for="nome">Nome do cliente:</label>
+                <label for="cpf" class="cpf_label" style="margin-left: 250px; margin-right: 180px;">Quantidade:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="nome" id="nome" class="input_grd escrever_texto">
+                <input type="text" name="cpf" id="cpf" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="email">Nome dos produtos:</label>
+                <label for="telefone" class="margin-left-cli" style="margin-left: 220px; margin-right: 200px;" >Sub-total:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="email" id="email" class="input_grd escrever_texto">
+                <input type="text" name="telefone" id="telefone" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <label for="cidade">Qtn de produtos:</label>
+                <label for="estado" class="margin-left-cli" style="margin-left: 250px; margin-right: 240px;" >Total:</label>
+            </div>
+            <div class=" ">
+                <input type="text" name="cidade" id="cidade" class="input_grd escrever_texto">
+                <input type="text" name="estado" id="estado" class="input_med margin-left-input escrever_texto">
+            </div>
+
+            <div>
+                <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
+                <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
             </div>
         </fieldset>
-
-        
 
     </main>
 </body>

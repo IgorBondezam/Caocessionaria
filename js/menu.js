@@ -4,9 +4,13 @@ window.onload = function () {
     const addVenda = document.getElementById("addVenda")
     const listaCli = document.getElementById("listaCli")
 
-    const fechar_aba = document.querySelector(".fechar_aba")
+    const fechar_abaCli = document.querySelector("#fechar_Cli")
+    const fechar_abaProd = document.getElementById("fechar_abaProd")
+    const fechar_abaVenda = document.getElementById("fechar_venda")
 
     const fieldCli = document.getElementById("fieldCli")
+    const fieldProd = document.getElementById("fieldProd")
+    const fieldVenda = document.getElementById("fieldVenda")
 
     addCli.addEventListener("click", function () {
         if (!addCli.classList.contains("fundoAzul")) {
@@ -16,6 +20,9 @@ window.onload = function () {
             listaCli.classList.remove("fundoAzul")
 
             fieldCli.classList.remove("desaparecer")
+            fieldProd.classList.add("desaparecer")
+            fieldVenda.classList.add("desaparecer")
+
         } else {
             addCli.classList.remove("fundoAzul")
             fieldCli.classList.add("desaparecer")
@@ -28,8 +35,13 @@ window.onload = function () {
             addCli.classList.remove("fundoAzul")
             addVenda.classList.remove("fundoAzul")
             listaCli.classList.remove("fundoAzul")
+
+            fieldCli.classList.add("desaparecer")
+            fieldProd.classList.remove("desaparecer")
+            fieldVenda.classList.add("desaparecer")
         } else {
             addProd.classList.remove("fundoAzul")
+            fieldProd.classList.add("desaparecer")
         }
     })
 
@@ -39,8 +51,13 @@ window.onload = function () {
             addProd.classList.remove("fundoAzul")
             addCli.classList.remove("fundoAzul")
             listaCli.classList.remove("fundoAzul")
+
+            fieldCli.classList.add("desaparecer")
+            fieldProd.classList.add("desaparecer")
+            fieldVenda.classList.remove("desaparecer")
         } else {
             addVenda.classList.remove("fundoAzul")
+            fieldVenda.classList.add("desaparecer")
         }
     })
 
@@ -55,10 +72,21 @@ window.onload = function () {
         }
     })
 
-    fechar_aba.addEventListener("click", function(){
+    fechar_abaCli.addEventListener("click", function(){
         addCli.classList.remove("fundoAzul")
         fieldCli.classList.add("desaparecer")
     })
 
+    fechar_abaProd.addEventListener("click", function(){
+        addProd.classList.remove("fundoAzul")
+        fieldProd.classList.add("desaparecer")
+    })
+
+    fechar_abaVenda.addEventListener("click", function(){
+        addVenda.classList.remove("fundoAzul")
+        fieldVenda.classList.add("desaparecer")
+    })
+
+    
 
 }

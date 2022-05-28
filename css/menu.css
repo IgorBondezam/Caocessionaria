@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --fontePrincipal: Verdana;
+}
+.escrever_texto{
+    padding-left: 10px;
+    font-family: var(--fontePrincipal);
+    font-size: 18px;
+}
+.baixo {
+    justify-content: flex-end;
 }
 
 .desaparecer {
@@ -24,11 +32,6 @@
 .meio {
     align-items: center;
 
-}
-
-.espacoEntre {
-    justify-content: space-around;
-    align-content: space-around;
 }
 
 .coluna {
@@ -82,19 +85,18 @@
 }
 
 /* LOGOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
-        #logo {
-            width: 50%;
-            margin-top: 10%;
-            margin-left: 25%;
+#logo {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
 
-        }
+}
 
 .fundoAzul {
     background-color: #94D2F8;
 }
 
-
-.fechar_aba{
+.fechar_aba {
     margin-top: 20px;
     margin-bottom: 16px;
     margin-left: 570px;
@@ -106,132 +108,25 @@
     width: 20px;
     padding-left: 4px;
     border-radius: 3px;
-    
+
+}
+
+.fechar_abaProd {
+    margin-top: 20px;
+
+    font-family: var(--fontePrincipal);
+    cursor: pointer;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    padding-left: 4px;
+    border-radius: 3px;
+
 }
 
 /* ADD CLIIIIIIIIIIIIIIIIIIII */
 
-        #fieldCli {
-            position: absolute;
-            width: 800px;
-            height: 480px;
-            left: 35%;
-            top: 23%;
-
-            background: #D8F3EB;
-            border: 3px solid #38B8D4;
-        }
-
-        label {
-            cursor: pointer;
-
-            font-family: sans-serif;
-            font-weight: 700;
-            font-size: 18px;
-            color: #000000;
-
-        }
-
-        #labId {
-            padding-right: 80px;
-        }
-
-        #labSexo {
-            padding-right: 10px;
-            padding-left: 80px;
-        }
-
-        #labNasc {
-            padding-left: 110px;
-        }
-
-        #labCad {
-            padding-left: 90px;
-        }
-
-        .espacoLabelPqn {
-            margin-top: 10px;
-
-        }
-        .cpf_label{
-            margin-left: 30px;
-        }
-
-
-        .input_pqn {
-            width: 100px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.88);
-            border: 3px solid rgba(0, 0, 0, 0.44);
-            border-radius: 18px;
-            margin-left: 45px;
-            margin-right: 45px;
-
-        }
-
-        .input_med {
-            width: 267.45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.88);
-            border: 3px solid rgba(0, 0, 0, 0.44);
-            border-radius: 18px;
-            margin-top: 30px;
-            margin-bottom: 8px;
-
-        }
-
-        .input_grd {
-            width: 350.96px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.88);
-            border: 3px solid rgba(0, 0, 0, 0.44);
-            border-radius: 18px;
-            margin-top: 30px;
-            margin-bottom: 8px;
-
-
-        }
-
-        .botao_form {
-            width: 211px;
-            height: 45px;
-            border-radius: 18px;
-            cursor: pointer;
-            margin-top: 20px;
-            margin-left: 30px;
-            margin-right: 5px;
-
-            font-family: sans-serif;
-            font-weight: 700;
-            font-size: 16px;
-            color: #000000;
-        }     
-        #email{
-            width: 345px;
-        }
-        #telefone{
-            width: 260px;
-        }
-        #cidade{
-            width: 348px;
-        }
-        #cfp{
-            width: 263px;
-        }
-
-
-        #salvar {
-            background: rgba(66, 255, 0, 0.44);
-            border: 3px solid rgba(66, 255, 0, 0.44);
-
-        }
-
-        #excluir {
-            background: rgba(255, 0, 15, 0.84);
-            border: 3px solid rgba(211, 9, 9, 0.65);
-        }
-
-#fieldProd{
+#fieldCli {
     position: absolute;
     width: 800px;
     height: 480px;
@@ -241,12 +136,191 @@
     background: #D8F3EB;
     border: 3px solid #38B8D4;
 }
-#idProd{
+
+label {
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+
+}
+
+#labId {
+    margin-right: 80px;
+}
+
+#labSexo {
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+#labNasc {
+    margin-left: 110px;
+}
+
+#labCad {
+    margin-left: 90px;
+}
+
+.espacoLabelPqn {
+    margin-top: 10px;
+}
+
+.cpf_label {
+    margin-left: 30px;
+}
+
+
+.input_pqn {
+    width: 100px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid rgba(0, 0, 0, 0.44);
+    border-radius: 18px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 8px;
+
+}
+
+.input_med {
+    width: 267.45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid rgba(0, 0, 0, 0.44);
+    border-radius: 18px;
+    margin-bottom: 8px;
+
+}
+
+.input_grd {
+    width: 350.96px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid rgba(0, 0, 0, 0.44);
+    border-radius: 18px;
+    margin-bottom: 8px;
+
+
+}
+
+.botao_form {
+    width: 211px;
+    height: 45px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 5px;
+
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+}
+
+#email {
+    width: 355px;
+}
+
+#telefone {
+    width: 260px;
+}
+
+#cidade {
+    width: 348px;
+}
+
+#cfp {
+    width: 263px;
+}
+
+
+#salvar {
+    background: rgba(66, 255, 0, 0.44);
+    border: 3px solid rgba(66, 255, 0, 0.44);
+
+}
+
+#excluir {
+    background: rgba(255, 0, 15, 0.84);
+    border: 3px solid rgba(211, 9, 9, 0.65);
+}
+
+#fieldProd {
+    position: absolute;
+    width: 800px;
+    height: 480px;
+    left: 35%;
+    top: 23%;
+
+    background: #D8F3EB;
+    border: 3px solid #38B8D4;
+}
+
+#idProd {
     margin-left: 0;
     margin-right: 540px;
 
 }
 
-#labIdProd{
-    margin-right: 680px;
+#labIdProd {
+    margin-top: 20px;
+    margin-right: 600px;
+}
+
+.margin-left-cli{
+    margin-left: 300px;
+    margin-right: 200px;
+}
+
+.margin-left{
+    margin-left: 280px;
+    margin-right: 140px;
+}
+.margin-left-telefone{
+    margin-left: 270px;
+    margin-right: 200px;
+}
+
+.margin-left-input{
+    margin-left: 25px;
+}
+.desce-25{
+    margin-bottom: 25px;
+}
+.cima-25{
+    margin-top: 25px;
+}
+
+
+#fieldVenda {
+    position: absolute;
+    width: 800px;
+    height: 480px;
+    left: 35%;
+    top: 23%;
+
+    background: #D8F3EB;
+    border: 3px solid #38B8D4;
+}
+
+#labIdVenda {
+    margin-left: 10px;
+    margin-right: 60px;
+}
+#labIdCliente{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+#labIdProduto {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+#labDataVenda {
+    margin-left: 50px;
 }
