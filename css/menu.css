@@ -7,11 +7,13 @@
 :root {
     --fontePrincipal: Verdana;
 }
-.escrever_texto{
+
+.escrever_texto {
     padding-left: 10px;
     font-family: var(--fontePrincipal);
     font-size: 18px;
 }
+
 .baixo {
     justify-content: flex-end;
 }
@@ -43,7 +45,7 @@
     height: 100vh;
 }
 
-#caixa_blur {
+.caixa_blur {
     width: 25%;
     height: 101.5%;
 
@@ -53,6 +55,20 @@
     top: -10px;
 
     background: #999FF3;
+    filter: blur(20px);
+    z-index: 0;
+}
+
+.caixa_blur_escuro {
+    width: 25%;
+    height: 101.5%;
+
+    position: absolute;
+
+    left: -20px;
+    top: -10px;
+
+    background: #595D92;
     filter: blur(20px);
     z-index: 0;
 }
@@ -79,6 +95,10 @@
     background: #94D2F8;
 }
 
+.corAzulEscuro {
+    background: #2F84B9;
+}
+
 #corpo {
     width: 75%;
     height: 10vh;
@@ -90,10 +110,54 @@
     margin-top: 10%;
     margin-left: 25%;
 
+
+}
+
+.mudar_tema {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(153, 159, 243);
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    border-radius: 5px;
+}
+
+.mudar_temaEscuro {
+    width: 80px;
+    height: 80px;
+    background-color: #595D92;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    border-radius: 5px;
+}
+
+#dia_modo {
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 6px;
+    right: 5.5px;
+    cursor: pointer;
+}
+
+.modo_local {
+    width: 70px;
+    height: 60px;
+    position: absolute;
+    top: 6px;
+    right: 5.5px;
+    cursor: pointer;
 }
 
 .fundoAzul {
+    /* atras dos botoes lateral*/
     background-color: #94D2F8;
+}
+
+.fundoAzulEscuro {
+    background-color: #2F84B9;
 }
 
 .fechar_aba {
@@ -126,7 +190,7 @@
 
 /* ADD CLIIIIIIIIIIIIIIIIIIII */
 
-#fieldCli {
+.model_field {
     position: absolute;
     width: 800px;
     height: 480px;
@@ -134,8 +198,24 @@
     top: 23%;
 
     background: #D8F3EB;
+    /*corpo da pagina dos model*/
     border: 3px solid #38B8D4;
+    /*borda da pagina dos model*/
 }
+
+.model_field_escuro {
+    position: absolute;
+    width: 800px;
+    height: 480px;
+    left: 35%;
+    top: 23%;
+
+    background-color: #8eb8dd;
+    /*corpo da pagina dos model*/
+    border: 3px solid #38B8D4;
+    /*borda da pagina dos model*/
+}
+
 
 label {
     cursor: pointer;
@@ -249,16 +329,7 @@ label {
     border: 3px solid rgba(211, 9, 9, 0.65);
 }
 
-#fieldProd {
-    position: absolute;
-    width: 800px;
-    height: 480px;
-    left: 35%;
-    top: 23%;
-
-    background: #D8F3EB;
-    border: 3px solid #38B8D4;
-}
+/* add produtoooo */
 
 #idProd {
     margin-left: 0;
@@ -271,47 +342,41 @@ label {
     margin-right: 600px;
 }
 
-.margin-left-cli{
+.margin-left-cli {
     margin-left: 300px;
     margin-right: 200px;
 }
 
-.margin-left{
+.margin-left {
     margin-left: 280px;
     margin-right: 140px;
 }
-.margin-left-telefone{
+
+.margin-left-telefone {
     margin-left: 270px;
     margin-right: 200px;
 }
 
-.margin-left-input{
+.margin-left-input {
     margin-left: 25px;
 }
-.desce-25{
+
+.desce-25 {
     margin-bottom: 25px;
 }
-.cima-25{
+
+.cima-25 {
     margin-top: 25px;
 }
 
-
-#fieldVenda {
-    position: absolute;
-    width: 800px;
-    height: 480px;
-    left: 35%;
-    top: 23%;
-
-    background: #D8F3EB;
-    border: 3px solid #38B8D4;
-}
+/* add vendaaa */
 
 #labIdVenda {
     margin-left: 10px;
     margin-right: 60px;
 }
-#labIdCliente{
+
+#labIdCliente {
     margin-left: 30px;
     margin-right: 10px;
 }
@@ -323,4 +388,80 @@ label {
 
 #labDataVenda {
     margin-left: 50px;
+}
+
+table {
+    border: 2px solid #004FE8;
+    border-collapse: collapse;
+    width: 85%;
+    background-color: #999FF3;
+  }
+
+td, th{
+    border-right: 2px solid #004FE8;
+    border-bottom: 2px solid #004FE8;
+    font-family: var(--fontePrincipal);
+
+
+}
+
+td{
+    padding-left: 3px;
+    padding-bottom: 2px;
+
+}
+
+th{
+    padding: 3px;
+    border-bottom: 2px solid #544E4E;
+}
+
+#pesquisar {
+    margin-left: 0;
+    /* margin-right: 375px; */
+    margin-right: 0;
+    border-radius: 0;
+    margin-bottom: 1px;
+    background-color: #999FF3;
+
+    border: 2px solid #004FE8;
+    border-right: 0;
+
+    height: 40px;
+    width: 300px;
+
+    cursor: default;
+
+}
+
+::placeholder {
+    border-bottom: 1px solid;
+    width: 230px;
+
+  }
+  
+
+#labPesquisar{
+        margin-top: 20px;
+        margin-right: 600px;
+}
+
+#icone_pesquisa{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 3px;
+    padding-left: 3px;
+
+    margin-right: 340px;
+
+    color: #004FE8;
+
+    background-color: #999FF3;
+    border: 2px solid #004FE8;
+    border-left: 0;
+
+    width: 35px;
+    height: 40px;
+
+    cursor: pointer;
 }

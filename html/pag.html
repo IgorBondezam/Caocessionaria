@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="../css/menu.css">
 </head>
 
-<body class="flex corAzul">
+<body id="body" class="flex corAzul">
     <div id="div_lateral">
-        <div id="caixa_blur"></div>
+        <div id="caixa_blur" class="caixa_blur"></div>
         <div class="flex meio coluna">
             <a id="addCli" class="texto_lateral">Adicionar cliente</a>
             <a id="addProd" class="texto_lateral">Adicionar produto</a>
@@ -31,9 +31,13 @@
 
         </div>
 
+        <div id="mudar_tema" class="mudar_tema">
+            <img id="dia_modo" class="modo_local " src="../img/dia.png" alt="">
+            <img id="noite_modo" src="../img/noite.png" class="modo_local desaparecer" alt="">
+        </div>
 
         <!-- ADD CLIENTES -->
-        <fieldset id="fieldCli" class="flex coluna meio desaparecer ">
+        <fieldset id="fieldCli" class="flex coluna meio desaparecer model_field">
 
             <div id="fechar_Cli" class="fechar_aba ">
                 <strong>X</strong>
@@ -58,7 +62,7 @@
                 <label for="cpf" class="cpf_label" style="margin-left: 310px; margin-right: 230px;">CPF:</label>
             </div>
             <div class=" ">
-                <input type="text" name="nome" id="nome" class="input_grd escrever_texto" >
+                <input type="text" name="nome" id="nome" class="input_grd escrever_texto">
                 <input type="text" name="cpf" id="cpf" class="input_med margin-left-input escrever_texto">
             </div>
 
@@ -88,7 +92,7 @@
 
         <!-- ADD PRODUTOS -->
 
-        <fieldset id="fieldProd" class="flex coluna meio desaparecer ">
+        <fieldset id="fieldProd" class="flex coluna meio desaparecer model_field ">
 
 
 
@@ -118,7 +122,8 @@
             </div>
             <div class=" ">
                 <input type="text" name="fornecedor" id="fornecedor" class="input_grd escrever_texto">
-                <input type="text" name="telefoneProd" id="telefoneProd" class="input_med margin-left-input escrever_texto">
+                <input type="text" name="telefoneProd" id="telefoneProd"
+                    class="input_med margin-left-input escrever_texto">
             </div>
 
             <div>
@@ -138,57 +143,123 @@
 
         <!-- ADD VENDAAAAAA -->
 
-        <fieldset id="fieldVenda" class="flex coluna meio desaparecer ">
+        <fieldset id="fieldVenda" class="flex coluna meio desaparecer model_field">
 
             <div id="fechar_venda" class="fechar_aba ">
                 <strong>X</strong>
             </div>
 
             <div id="label_pqn" class="flex ">
-                <label for="idCli" id="labIdVenda" class="espacoLabelPqn">Id da Venda:</label>
-                <label for="sexo" id="labIdCliente" class="espacoLabelPqn">Id do Cliente:</label>
-                <label for="nascimento" id="labIdProduto" class="espacoLabelPqn">Id do Produto:</label>
-                <label for="dataCad" id="labDataVenda" class="espacoLabelPqn">Data da Venda:</label>
+                <label for="idVenda" id="labIdVenda" class="espacoLabelPqn">Id da Venda:</label>
+                <label for="idCliVenda" id="labIdCliente" class="espacoLabelPqn">Id do Cliente:</label>
+                <label for="idProdVenda" id="labIdProduto" class="espacoLabelPqn">Id do Produto:</label>
+                <label for="dataVenda" id="labDataVenda" class="espacoLabelPqn">Data da Venda:</label>
             </div>
 
             <div class="flex  ">
-                <input type="text" name="idCli" id="idCli" class="input_pqn escrever_texto">
-                <input type="text" name="sexo" id="sexo" class="input_pqn escrever_texto">
-                <input type="text" name="nascimento" id="nascimento" class="input_pqn escrever_texto">
-                <input type="text" name="dataCad" id="dataCad" class="input_pqn escrever_texto">
+                <input type="text" name="idVenda" id="idVenda" class="input_pqn escrever_texto">
+                <input type="text" name="idCliVenda" id="idCliVenda" class="input_pqn escrever_texto">
+                <input type="text" name="idProdVenda" id="idProdVenda" class="input_pqn escrever_texto">
+                <input type="text" name="dataVenda" id="dataVenda" class="input_pqn escrever_texto">
             </div>
 
             <div>
-                <label for="nome">Nome do cliente:</label>
-                <label for="cpf" class="cpf_label" style="margin-left: 250px; margin-right: 180px;">Quantidade:</label>
+                <label for="nomeCli">Nome do cliente:</label>
+                <label for="quant" class="cpf_label"
+                    style="margin-left: 250px; margin-right: 180px;">Quantidade:</label>
             </div>
             <div class=" ">
-                <input type="text" name="nome" id="nome" class="input_grd escrever_texto">
-                <input type="text" name="cpf" id="cpf" class="input_med margin-left-input escrever_texto">
+                <input type="text" name="nomeCli" id="nomeCli" class="input_grd escrever_texto">
+                <input type="text" name="quant" id="quant" class="input_med margin-left-input escrever_texto">
             </div>
 
             <div>
-                <label for="email">Nome dos produtos:</label>
-                <label for="telefone" class="margin-left-cli" style="margin-left: 220px; margin-right: 200px;" >Sub-total:</label>
+                <label for="nomeProd">Nome dos produtos:</label>
+                <label for="sub-total" class="margin-left-cli"
+                    style="margin-left: 220px; margin-right: 200px;">Sub-total:</label>
             </div>
             <div class=" ">
-                <input type="text" name="email" id="email" class="input_grd escrever_texto">
-                <input type="text" name="telefone" id="telefone" class="input_med margin-left-input escrever_texto">
+                <input type="text" name="nomeProd" id="nomeProd" class="input_grd escrever_texto">
+                <input type="text" name="sub-total" id="sub-total" class="input_med margin-left-input escrever_texto">
             </div>
 
             <div>
-                <label for="cidade">Qtn de produtos:</label>
-                <label for="estado" class="margin-left-cli" style="margin-left: 250px; margin-right: 240px;" >Total:</label>
+                <label for="qtnTotal">Qtn de produtos:</label>
+                <label for="total" class="margin-left-cli"
+                    style="margin-left: 250px; margin-right: 240px;">Total:</label>
             </div>
             <div class=" ">
-                <input type="text" name="cidade" id="cidade" class="input_grd escrever_texto">
-                <input type="text" name="estado" id="estado" class="input_med margin-left-input escrever_texto">
+                <input type="text" name="qtnTotal" id="qtnTotal" class="input_grd escrever_texto">
+                <input type="text" name="total" id="total" class="input_med margin-left-input escrever_texto">
             </div>
 
             <div>
                 <input type="button" name="salvar" id="salvar" class="botao_form" value="Salvar">
                 <input type="button" name="excluir" id="excluir" class="botao_form" value="Limpar">
             </div>
+        </fieldset>
+
+        <!-- Lista Clientes -->
+
+        <fieldset id="fieldLista" class="flex coluna meio  model_field ">
+
+
+
+            <div id="label_pqn" class="flex baixo cima-25">
+                <label for="pesquisar" id="labPesquisar" class="espacoLabelPqn"></label>
+                <div id="fechar_abaLista" class="fechar_abaProd fechar_x">
+                    <strong>X</strong>
+                </div>
+            </div>
+
+            <div class="flex ">
+                <input type="text" name="pesquisar" placeholder="Pesquisar" id="pesquisar" class="input_pqn escrever_texto">
+                <img src="../img/search (1).png" id="icone_pesquisa" alt="">
+            </div>
+
+            <table id="tabela" class="">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Cidade</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Lucas Silva</td>
+                        <td>lucasilva@gmail.com</td>
+                        <td>Apucarana</td>
+                        <td>43 9 9853-5652</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Fernanda Montinegro</td>
+                        <td>ferMonti@gmail.com</td>
+                        <td>Toledo</td>
+                        <td>45 9 9903-2614</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>José Miranda</td>
+                        <td>mirandaSé@gmail.com</td>
+                        <td>Marialva</td>
+                        <td>44 9 9562-3366</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Heloisa Garcia</td>
+                        <td>heloGar@gmail.com</td>
+                        <td>Sarandi</td>
+                        <td>44 9 9658-1242</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
         </fieldset>
 
     </main>
